@@ -1,0 +1,36 @@
+<html>
+<head>
+<style media="screen">
+  .bigRedButton{
+    width:  500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #FF0000;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right:  0;
+    left:0;
+    margin: auto;
+    transition: 0.1s;
+  }
+    .bigRedButton:active{
+        background: #660000;
+        width:  600px;
+        height: 600px;
+    }
+</style>
+<meta name="viewport" content="user-scalable=no">
+</head>
+  <body>
+   <div type="button" name="button" class="bigRedButton"  onmouseup="save()"></div>
+  </body>
+  <script type="text/javascript">
+    function save(){
+      fetch('/save')
+      .then(function(){
+        console.log("save ok");
+      });
+    }
+  </script>
+</html>
