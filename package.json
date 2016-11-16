@@ -1,7 +1,7 @@
 {
   "name": "big-red-button",
   "version": "1.0.0",
-  "description": "create a subtitle when reb button pressed",
+  "description": "create a subtitle when red button pressed",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/luc-sorignet/BigRedButton.git"
   },
-  "author": "",
+  "author": "Florian Bellazouz, Luc Sorignet",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/luc-sorignet/BigRedButton/issues"

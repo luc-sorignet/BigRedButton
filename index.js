@@ -14,13 +14,14 @@ var subtitleNumber = 1;
 
 
 app.listen(8080);
-
+console.log("Begin record at "+startTime);
 app.get("/", function(req,res){
    res.sendFile(__dirname+"/index.html");
 });
 
 app.get("/save", function(req,res){
   res.end();
+  console.log("register subtitle N°"+subtitleNumber);
   fs.writeFile(startTime+'.srt', createSubtitle(),{flag:"a"});
 });
 
@@ -38,8 +39,9 @@ app.get("/save", function(req,res){
  * [subtitle Max 2 lines]
  * [empty line]
  */
-function createSubtitle(message = "Point d'intérêt")
+function createSubtitle(message)
 {
+  message = message || "Point d'intérêt";
   var timestamp =   Date.now() - startTime;
   var tempDebut = new Date(timestamp-3000);
   var tempFin = new Date(timestamp);
