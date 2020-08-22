@@ -1,7 +1,7 @@
 # BIG RED BUTTON
 This is just a clickable Big Red Button for subtitle generation
 
-![Screenshot1](https://github.com/luc-sorignet/BigRedButton/blob/master/screenshoot.png?raw=true)
+![Screenshot1](https://github.com/luc-sorignet/BigRedButton/blob/master/screenshot.png?raw=true)
 
 ## Install
 - git clone https://github.com/luc-sorignet/BigRedButton.git
