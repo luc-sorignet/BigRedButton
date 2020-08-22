@@ -9,7 +9,7 @@ This is just a clickable Big Red Button for subtitle generation
 - npm i
 
 ## Start
-- npm index.js
+- npm start
 - go to http://localhost:8080
 - Create some interest point in SubTitleFile with clicked event 
 
