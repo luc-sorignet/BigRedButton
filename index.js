@@ -22,7 +22,7 @@ app.get("/", function(req,res){
 app.get("/save", function(req,res){
   res.end();
   console.log("register subtitle N°"+subtitleNumber);
-  fs.writeFile(startTime+'.srt', createSubtitle(),{flag:"a"});
+  fs.writeFile(startTime+'.srt', createSubtitle(),{flag:"a"},(err)=>{if(err)console.error(err);});
 });
 
 // ------------------
